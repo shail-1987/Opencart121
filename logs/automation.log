@@ -1,19 +1,17 @@
-14:53:01.766 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
-14:53:21.340 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\Shailendra Prakash\eclipse-workspace\Opencart121\master.xml"
-14:53:25.382 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
-14:53:25.476 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
-14:53:26.031 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
-14:53:26.034 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
-14:53:27.407 [main] INFO  testCases.TC001_AccountRegistrationTest - ***************Test Completed**********************
-14:53:30.330 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
-14:53:30.802 [main] INFO  testCases.TC002_LoginTest - clicked on login button
-14:53:34.871 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
-15:13:37.706 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\Shailendra Prakash\eclipse-workspace\Opencart121\master.xml"
-15:13:41.694 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
-15:13:41.816 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
-15:13:42.364 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
-15:13:42.375 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
-15:13:43.787 [main] INFO  testCases.TC001_AccountRegistrationTest - ***************Test Completed**********************
-15:13:46.714 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
-15:13:47.146 [main] INFO  testCases.TC002_LoginTest - clicked on login button
-15:13:51.220 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
+20:48:28.897 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
+20:48:31.073 [main] INFO  testCases.TC001_AccountRegistrationTest - ***************Test Completed**********************
+20:48:34.422 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
+20:48:35.014 [main] INFO  testCases.TC002_LoginTest - clicked on login button
+20:48:39.519 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
+20:56:26.790 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
+20:56:26.969 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
+20:56:27.633 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
+20:56:27.637 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
+00:04:06.965 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
+00:04:07.157 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
+00:04:07.750 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
+00:04:07.768 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
+00:04:09.636 [main] INFO  testCases.TC001_AccountRegistrationTest - ***************Test Completed**********************
+00:04:13.156 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
+00:04:13.780 [main] INFO  testCases.TC002_LoginTest - clicked on login button
+00:04:18.207 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********

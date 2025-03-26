@@ -3,7 +3,7 @@
 <suite name="Master Suite">
 	<groups>
 		<run>
-			<include name="Sanity" />
+			<include name="Master" />
 		</run>
 
 	</groups>

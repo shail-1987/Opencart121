@@ -113,6 +113,11 @@ public class BaseClass {
 	}
 	
 	public String capturescreen(String tname)throws IOException {
+		
+	/*	SimpleDateFormat df = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"); 
+		Date dt = new Date(); 
+		String currentdatetimestamp = df.format(dt);*/
+		
 		String timeStamp=new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		
 		TakesScreenshot takesscreenshot=(TakesScreenshot)driver;
