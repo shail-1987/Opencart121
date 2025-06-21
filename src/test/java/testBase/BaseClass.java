@@ -32,23 +32,23 @@ public class BaseClass {
 	public Properties p;
 
 	@BeforeClass(groups= {"Sanity","Regression","Master"})
-	
+
 	@Parameters({"os","browser"})
 	public void setup(String os, String br) throws IOException {
 		FileInputStream fis=new FileInputStream("./src//test//resources//config.properties");
 		p=new Properties();
 		p.load(fis);
 		logger=LogManager.getLogger(this.getClass());//this always represent class
-		
-		if(p.getProperty("execution_env").equalsIgnoreCase("remote")) 
+
+		if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
 		{
 			DesiredCapabilities capabilities=new DesiredCapabilities();
-			
-			if(os.equalsIgnoreCase("windows")) 
+
+			if(os.equalsIgnoreCase("windows"))
 			{
 			capabilities.setPlatform(Platform.WIN11);
-			}	
-			else if(os.equalsIgnoreCase("mac")) 
+			}
+			else if(os.equalsIgnoreCase("mac"))
 			{
 				capabilities.setPlatform(Platform.MAC);
 			}
@@ -56,14 +56,14 @@ public class BaseClass {
 				System.out.println("no matching os");
 				return;
 			}
-			
-			switch(br.toLowerCase()) 
+
+			switch(br.toLowerCase())
 			{
 			case "chrome":capabilities.setBrowserName("chrome");break;
 			case "edge":capabilities.setBrowserName("MicrosoftEdge");break;
 			case "firefox":capabilities.setBrowserName("firefox");break;
 			default:System.out.println("no matching browser");return;
-			
+
 			}
 			driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
 		}
@@ -74,14 +74,14 @@ public class BaseClass {
 			case "edge" : driver=new EdgeDriver();break;
 			case "firefox": driver=new FirefoxDriver();break;
 			default: System.out.println("invalid browser");return;
-			
-			
+
+
 		}
-		
-		
-		
+
+
+
 		}
-		
+
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get(p.getProperty("appURL"));
