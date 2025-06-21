@@ -70,16 +70,23 @@ public class BaseClass {
 		if(p.getProperty("execution_env").equalsIgnoreCase("local")) 
 		{
 			switch(br.toLowerCase()) {
-			case "chrome": driver=new ChromeDriver();break;
-			case "edge" : driver=new EdgeDriver();break;
-			case "firefox": driver=new FirefoxDriver();break;
+			case "chrome":
+				org.openqa.selenium.chrome.ChromeOptions chromeOptions = new org.openqa.selenium.chrome.ChromeOptions();
+				chromeOptions.addArguments("--headless=new");
+				driver = new ChromeDriver(chromeOptions);
+				break;
+			case "edge" :
+				org.openqa.selenium.edge.EdgeOptions edgeOptions = new org.openqa.selenium.edge.EdgeOptions();
+				edgeOptions.addArguments("--headless=new");
+				driver = new EdgeDriver(edgeOptions);
+				break;
+			case "firefox":
+				org.openqa.selenium.firefox.FirefoxOptions firefoxOptions = new org.openqa.selenium.firefox.FirefoxOptions();
+				firefoxOptions.addArguments("--headless");
+				driver = new FirefoxDriver(firefoxOptions);
+				break;
 			default: System.out.println("invalid browser");return;
-
-
-		}
-
-
-
+			}
 		}
 
 		driver.manage().deleteAllCookies();
