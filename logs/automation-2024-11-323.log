@@ -1,0 +1,47 @@
+12:40:28.583 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+12:40:28.619 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+12:40:28.619 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+12:40:28.619 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+12:40:28.656 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+12:40:28.656 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+12:40:28.656 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+12:41:30.026 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
+12:41:30.141 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
+12:41:30.686 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
+12:41:30.688 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
+12:41:32.662 [main] INFO  testCases.TC001_AccountRegistrationTest - ***************Test Completed**********************
+12:41:35.491 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
+12:41:35.934 [main] INFO  testCases.TC002_LoginTest - clicked on login button
+12:41:40.200 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
+12:42:32.042 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\Shailendra Prakash\eclipse-workspace\Opencart121\master.xml"
+12:42:35.969 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
+12:42:36.069 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
+12:42:36.686 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
+12:42:36.688 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
+12:42:38.103 [main] INFO  testCases.TC001_AccountRegistrationTest - ***************Test Completed**********************
+12:42:41.036 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
+12:42:41.505 [main] INFO  testCases.TC002_LoginTest - clicked on login button
+12:42:45.634 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
+12:54:20.382 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\Shailendra Prakash\eclipse-workspace\Opencart121\master.xml"
+12:54:24.518 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
+12:54:24.610 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
+12:54:25.133 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
+12:54:25.136 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
+12:54:26.431 [main] INFO  testCases.TC001_AccountRegistrationTest - ***************Test Completed**********************
+12:54:29.288 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
+12:54:29.741 [main] INFO  testCases.TC002_LoginTest - clicked on login button
+12:54:34.128 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
+12:56:39.859 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\Shailendra Prakash\eclipse-workspace\Opencart121\master.xml"
+12:56:43.494 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
+12:56:43.594 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
+12:56:44.162 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
+12:56:44.164 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
+12:56:45.687 [main] INFO  testCases.TC001_AccountRegistrationTest - ***************Test Completed**********************
+12:56:48.672 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
+12:56:49.190 [main] INFO  testCases.TC002_LoginTest - clicked on login button
+12:56:53.280 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
+18:10:21.191 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
+18:11:08.851 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
+20:48:28.066 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
+20:48:28.238 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
+20:48:28.875 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
