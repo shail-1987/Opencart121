@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-01T23:27:02 IST" name="Default suite" finished-at="2025-03-01T23:27:05 IST" duration-ms="2225">
+    <groups>
+    </groups>
+    <test started-at="2025-03-01T23:27:02 IST" name="Default test" finished-at="2025-03-01T23:27:05 IST" duration-ms="2225">
+      <class name="day2.differentWaysToCreatePostRequestBody">
+        <test-method signature="testPostUsingHashMap()[pri:1, instance:day2.differentWaysToCreatePostRequestBody@1f760b47]" started-at="2025-03-01T23:27:02 IST" name="testPostUsingHashMap" finished-at="2025-03-01T23:27:04 IST" duration-ms="1991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUsingHashMap -->
+        <test-method signature="testPostUsingJson()[pri:3, instance:day2.differentWaysToCreatePostRequestBody@1f760b47]" started-at="2025-03-01T23:27:04 IST" name="testPostUsingJson" finished-at="2025-03-01T23:27:05 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUsingJson -->
+        <test-method signature="testPostUsingPOJO()[pri:4, instance:day2.differentWaysToCreatePostRequestBody@1f760b47]" started-at="2025-03-01T23:27:05 IST" name="testPostUsingPOJO" finished-at="2025-03-01T23:27:05 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUsingPOJO -->
+        <test-method signature="testPostUsingJsonFile()[pri:5, instance:day2.differentWaysToCreatePostRequestBody@1f760b47]" started-at="2025-03-01T23:27:05 IST" name="testPostUsingJsonFile" finished-at="2025-03-01T23:27:05 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUsingJsonFile -->
+      </class> <!-- day2.differentWaysToCreatePostRequestBody -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

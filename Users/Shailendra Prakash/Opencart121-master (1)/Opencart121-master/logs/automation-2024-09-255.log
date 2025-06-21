@@ -1,0 +1,47 @@
+14:36:30.163 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:36:30.189 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:36:30.191 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:36:30.192 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:36:30.210 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:36:30.216 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:36:30.217 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:36:30.235 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:36:30.236 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:36:30.236 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:36:30.255 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:36:30.255 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:36:30.256 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:36:59.860 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
+14:37:00.395 [main] INFO  testCases.TC002_LoginTest - clicked on login button
+14:37:04.419 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
+18:05:23.817 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
+18:05:24.363 [main] INFO  testCases.TC002_LoginTest - clicked on login button
+18:05:28.418 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
+23:01:02.911 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
+23:01:03.012 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
+23:01:03.533 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
+23:01:03.536 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
+23:01:04.610 [main] INFO  testCases.TC001_AccountRegistrationTest - ***************Test Completed**********************
+23:01:07.400 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
+23:01:07.788 [main] INFO  testCases.TC002_LoginTest - clicked on login button
+23:01:11.691 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
+23:03:19.089 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
+23:03:19.161 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
+23:03:19.683 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
+23:03:19.686 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
+23:03:20.793 [main] INFO  testCases.TC001_AccountRegistrationTest - ***************Test Completed**********************
+23:03:23.547 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
+23:03:23.953 [main] INFO  testCases.TC002_LoginTest - clicked on login button
+23:03:27.874 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
+23:04:59.700 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
+23:04:59.764 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
+23:05:00.259 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
+23:05:00.261 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
+23:05:04.497 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
+23:05:04.893 [main] INFO  testCases.TC002_LoginTest - clicked on login button
+23:05:09.229 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
+15:10:33.418 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
+15:10:33.533 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
+15:10:34.167 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
+15:10:34.169 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
+15:10:35.842 [main] INFO  testCases.TC001_AccountRegistrationTest - ***************Test Completed**********************
