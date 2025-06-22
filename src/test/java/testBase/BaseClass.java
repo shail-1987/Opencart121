@@ -8,7 +8,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 
-import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -31,109 +30,90 @@ public class BaseClass {
 	public Logger logger;
 	public Properties p;
 
-	@BeforeClass(groups= {"Sanity","Regression","Master"})
-
+	@BeforeClass
 	@Parameters({"os","browser"})
 	public void setup(String os, String br) throws IOException {
-		FileInputStream fis=new FileInputStream("./src//test//resources//config.properties");
-		p=new Properties();
+		FileInputStream fis = new FileInputStream("./src/test/resources/config.properties");
+		p = new Properties();
 		p.load(fis);
-		logger=LogManager.getLogger(this.getClass());//this always represent class
+		logger = LogManager.getLogger(this.getClass());
 
-		if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
-		{
-			DesiredCapabilities capabilities=new DesiredCapabilities();
-
-			if(os.equalsIgnoreCase("Linux"))
-			{
-				capabilities.setPlatform(Platform.LINUX);
-			}
-			else if(os.equalsIgnoreCase("windows") || os.equalsIgnoreCase("win"))
-			{
-				capabilities.setPlatform(Platform.WIN10);
-			}
-			else if(os.equalsIgnoreCase("win11"))
-			{
+		if (p.getProperty("execution_env").equalsIgnoreCase("remote")) {
+			DesiredCapabilities capabilities = new DesiredCapabilities();
+			if (os.equalsIgnoreCase("windows")) {
 				capabilities.setPlatform(Platform.WIN11);
-			}
-			else if(os.equalsIgnoreCase("mac"))
-			{
+			} else if (os.equalsIgnoreCase("mac")) {
 				capabilities.setPlatform(Platform.MAC);
-			}
-			else {
+			} else {
 				System.out.println("no matching os");
 				return;
 			}
-
-			switch(br.toLowerCase())
-			{
-				case "chrome":capabilities.setBrowserName("chrome");break;
-				case "edge":capabilities.setBrowserName("MicrosoftEdge");break;
-				case "firefox":capabilities.setBrowserName("firefox");break;
-				default:System.out.println("no matching browser");return;
-
+			switch (br.toLowerCase()) {
+				case "chrome":
+					capabilities.setBrowserName("chrome");
+					break;
+				case "edge":
+					capabilities.setBrowserName("MicrosoftEdge");
+					break;
+				case "firefox":
+					capabilities.setBrowserName("firefox");
+					break;
+				default:
+					System.out.println("no matching browser");
+					return;
 			}
-			driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
-		}
-		if(p.getProperty("execution_env").equalsIgnoreCase("local"))
-		{
-			switch(br.toLowerCase()) {
-				case "chrome": driver=new ChromeDriver();break;
-				case "edge" : driver=new EdgeDriver();break;
-				case "firefox": driver=new FirefoxDriver();break;
-				default: System.out.println("invalid browser");return;
-
-
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+		} else if (p.getProperty("execution_env").equalsIgnoreCase("local")) {
+			switch (br.toLowerCase()) {
+				case "chrome":
+					driver = new ChromeDriver();
+					break;
+				case "edge":
+					driver = new EdgeDriver();
+					break;
+				case "firefox":
+					driver = new FirefoxDriver();
+					break;
+				default:
+					System.out.println("invalid browser");
+					return;
 			}
-
-
-
 		}
 
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get(p.getProperty("appURL"));
-
 	}
 
-	@AfterClass(groups={"Sanity","Regression","Master"})
+	@AfterClass
 	public void tearDown() {
 		//driver.quit();
-
 	}
 
-	public String randomString()
-	{
-		String generatedString=RandomStringUtils.randomAlphabetic(5);
-		return generatedString;
+	public String randomString() {
+		return java.util.UUID.randomUUID().toString().replaceAll("[^A-Za-z]", "").substring(0, 5);
 	}
 
-	public String randomNumbers()
-	{
-		String generatedNumbers=RandomStringUtils.randomNumeric(10);
-		return generatedNumbers;
+	public String randomNumbers() {
+		return java.util.UUID.randomUUID().toString().replaceAll("[^0-9]", "").substring(0, 10);
 	}
 
-	public String randomAlphaNumeric()
-	{
-		String generatedString=RandomStringUtils.randomAlphabetic(3);
-		String generatedNumbers=RandomStringUtils.randomNumeric(3);
-		return (generatedString+"@"+generatedNumbers);
+	public String randomAlphaNumeric() {
+		String generatedString = java.util.UUID.randomUUID().toString().replaceAll("[^A-Za-z]", "").substring(0, 3);
+		String generatedNumbers = java.util.UUID.randomUUID().toString().replaceAll("[^0-9]", "").substring(0, 3);
+		return (generatedString + "@" + generatedNumbers);
 	}
 
-	public String capturescreen(String tname)throws IOException {
-
-	/*	SimpleDateFormat df = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
-		Date dt = new Date();
-		String currentdatetimestamp = df.format(dt);*/
-
-		String timeStamp=new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-
-		TakesScreenshot takesscreenshot=(TakesScreenshot)driver;
-		File sourceFile=takesscreenshot.getScreenshotAs(OutputType.FILE);
-		String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\"+tname+"_"+timeStamp+".png";
-		File targetFile=new File(targetFilePath);
-		sourceFile.renameTo(targetFile);
+	public String capturescreen(String tname) throws IOException {
+		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		TakesScreenshot takesscreenshot = (TakesScreenshot) driver;
+		File sourceFile = takesscreenshot.getScreenshotAs(OutputType.FILE);
+		String targetFilePath = System.getProperty("user.dir") + "\\screenshots\\" + tname + "_" + timeStamp + ".png";
+		File targetFile = new File(targetFilePath);
+		boolean renamed = sourceFile.renameTo(targetFile);
+		if (!renamed) {
+			throw new IOException("Failed to move screenshot to target location: " + targetFilePath);
+		}
 		return targetFilePath;
 	}
 
