@@ -44,7 +44,15 @@ public class BaseClass {
 		{
 			DesiredCapabilities capabilities=new DesiredCapabilities();
 
-			if(os.equalsIgnoreCase("windows"))
+			if(os.equalsIgnoreCase("Linux"))
+			{
+				capabilities.setPlatform(Platform.LINUX);
+			}
+			else if(os.equalsIgnoreCase("windows") || os.equalsIgnoreCase("win"))
+			{
+				capabilities.setPlatform(Platform.WIN10);
+			}
+			else if(os.equalsIgnoreCase("win11"))
 			{
 				capabilities.setPlatform(Platform.WIN11);
 			}
