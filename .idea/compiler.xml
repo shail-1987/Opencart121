@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Opencart121" options="" />
+      <module name="Opencart121" options="--add-exports jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
     </option>
   </component>
 </project>
