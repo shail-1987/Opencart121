@@ -46,7 +46,7 @@ public class BaseClass {
 
 			if(os.equalsIgnoreCase("windows"))
 			{
-			capabilities.setPlatform(Platform.WIN11);
+				capabilities.setPlatform(Platform.WIN11);
 			}
 			else if(os.equalsIgnoreCase("mac"))
 			{
@@ -59,34 +59,27 @@ public class BaseClass {
 
 			switch(br.toLowerCase())
 			{
-			case "chrome":capabilities.setBrowserName("chrome");break;
-			case "edge":capabilities.setBrowserName("MicrosoftEdge");break;
-			case "firefox":capabilities.setBrowserName("firefox");break;
-			default:System.out.println("no matching browser");return;
+				case "chrome":capabilities.setBrowserName("chrome");break;
+				case "edge":capabilities.setBrowserName("MicrosoftEdge");break;
+				case "firefox":capabilities.setBrowserName("firefox");break;
+				default:System.out.println("no matching browser");return;
 
 			}
 			driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
 		}
-		if(p.getProperty("execution_env").equalsIgnoreCase("local")) 
+		if(p.getProperty("execution_env").equalsIgnoreCase("local"))
 		{
 			switch(br.toLowerCase()) {
-			case "chrome":
-				org.openqa.selenium.chrome.ChromeOptions chromeOptions = new org.openqa.selenium.chrome.ChromeOptions();
-				chromeOptions.addArguments("--headless=new");
-				driver = new ChromeDriver(chromeOptions);
-				break;
-			case "edge" :
-				org.openqa.selenium.edge.EdgeOptions edgeOptions = new org.openqa.selenium.edge.EdgeOptions();
-				edgeOptions.addArguments("--headless=new");
-				driver = new EdgeDriver(edgeOptions);
-				break;
-			case "firefox":
-				org.openqa.selenium.firefox.FirefoxOptions firefoxOptions = new org.openqa.selenium.firefox.FirefoxOptions();
-				firefoxOptions.addArguments("--headless");
-				driver = new FirefoxDriver(firefoxOptions);
-				break;
-			default: System.out.println("invalid browser");return;
+				case "chrome": driver=new ChromeDriver();break;
+				case "edge" : driver=new EdgeDriver();break;
+				case "firefox": driver=new FirefoxDriver();break;
+				default: System.out.println("invalid browser");return;
+
+
 			}
+
+
+
 		}
 
 		driver.manage().deleteAllCookies();
@@ -101,33 +94,33 @@ public class BaseClass {
 
 	}
 
-		public String randomString() 
+	public String randomString()
 	{
 		String generatedString=RandomStringUtils.randomAlphabetic(5);
 		return generatedString;
 	}
-	
-	public String randomNumbers() 
+
+	public String randomNumbers()
 	{
 		String generatedNumbers=RandomStringUtils.randomNumeric(10);
 		return generatedNumbers;
 	}
-	
-	public String randomAlphaNumeric() 
+
+	public String randomAlphaNumeric()
 	{
 		String generatedString=RandomStringUtils.randomAlphabetic(3);
 		String generatedNumbers=RandomStringUtils.randomNumeric(3);
 		return (generatedString+"@"+generatedNumbers);
 	}
-	
+
 	public String capturescreen(String tname)throws IOException {
-		
-	/*	SimpleDateFormat df = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"); 
-		Date dt = new Date(); 
+
+	/*	SimpleDateFormat df = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
+		Date dt = new Date();
 		String currentdatetimestamp = df.format(dt);*/
-		
+
 		String timeStamp=new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		
+
 		TakesScreenshot takesscreenshot=(TakesScreenshot)driver;
 		File sourceFile=takesscreenshot.getScreenshotAs(OutputType.FILE);
 		String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\"+tname+"_"+timeStamp+".png";

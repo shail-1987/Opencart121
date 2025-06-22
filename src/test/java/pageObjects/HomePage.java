@@ -3,6 +3,10 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class HomePage extends BasePage
 {
@@ -22,17 +26,24 @@ public class HomePage extends BasePage
 	@FindBy(xpath="//a[text()='Login']")
 	WebElement linkLogin;
 	
-	
+
+	private WebDriverWait getWait() {
+		return new WebDriverWait(driver, Duration.ofSeconds(15));
+	}
+
 	public void clickMyAccount() {
-		lnkMyaccount.click();
+		getWait().until(ExpectedConditions.visibilityOf(lnkMyaccount));
+		getWait().until(ExpectedConditions.elementToBeClickable(lnkMyaccount)).click();
 	}
 	
 	public void clickRegister() {
-		lnkRegister.click(); 
+		getWait().until(ExpectedConditions.visibilityOf(lnkRegister));
+		getWait().until(ExpectedConditions.elementToBeClickable(lnkRegister)).click();
 	}
 	
 	public void clickLogin() {
-		linkLogin.click(); 
+		getWait().until(ExpectedConditions.visibilityOf(linkLogin));
+		getWait().until(ExpectedConditions.elementToBeClickable(linkLogin)).click();
 	}
 
 
