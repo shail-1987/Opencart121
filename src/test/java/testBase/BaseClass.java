@@ -64,20 +64,23 @@ public class BaseClass {
 			}
 			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 		} else if (p.getProperty("execution_env").equalsIgnoreCase("local")) {
-			switch (br.toLowerCase()) {
-				case "chrome":
-					driver = new ChromeDriver();
-					break;
-				case "edge":
-					driver = new EdgeDriver();
-					break;
-				case "firefox":
-					driver = new FirefoxDriver();
-					break;
-				default:
-					System.out.println("invalid browser");
-					return;
-			}
+            switch (br.toLowerCase()) {
+                case "chrome":
+                    io.github.bonigarcia.wdm.WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+                    break;
+                case "edge":
+                    io.github.bonigarcia.wdm.WebDriverManager.edgedriver().setup();
+                    driver = new EdgeDriver();
+                    break;
+                case "firefox":
+                    io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+                default:
+                    System.out.println("invalid browser");
+                    return;
+            }
 		}
 
 		driver.manage().deleteAllCookies();
