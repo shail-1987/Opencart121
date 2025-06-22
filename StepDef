@@ -22,3 +22,12 @@
 01:06:42.670 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
 01:06:43.575 [main] INFO  testCases.TC002_LoginTest - clicked on login button
 01:06:48.506 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
+12:48:21.430 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\Shailendra Prakash\Opencart121-master (1)\Opencart121-master\master.xml"
+12:48:26.892 [main] INFO  testCases.TC001_AccountRegistrationTest - *********Test Starting TC001_AccountRegistrationTest*************
+12:48:28.058 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on my Account
+12:48:29.667 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register
+12:48:29.669 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing Customer details...
+12:48:31.491 [main] INFO  testCases.TC001_AccountRegistrationTest - ***************Test Completed**********************
+12:48:35.226 [main] INFO  testCases.TC002_LoginTest - ******Starting TC_002_LoginTest ********
+12:48:36.026 [main] INFO  testCases.TC002_LoginTest - clicked on login button
+12:48:40.577 [main] INFO  testCases.TC002_LoginTest - **********Test Case Done********
